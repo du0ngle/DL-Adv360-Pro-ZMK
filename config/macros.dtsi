@@ -38,14 +38,11 @@ macro_go_view_1: macro_go_view_1 {
     label = "macro_go_view_1";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <
-        // Hold Ctrl and Windows keys
-        &macro_press &kp LCTRL &kp LGUI 
-        // Press Left Arrow key 9 times
-        &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT 
-        // Press Right Arrow key 1 time 
-        &kp RIGHT 
-        // Release all keys 
-        &macro_release
-    >;
+    bindings 
+    = <&macro_press &kp LCTRL &kp LGUI>
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
+    , <&macro_release>
+    , <&macro_press &kp LCTRL &kp LGUI>
+    , <&macro_tap &kp RIGHT>
+    , <&macro_release>;
 };
