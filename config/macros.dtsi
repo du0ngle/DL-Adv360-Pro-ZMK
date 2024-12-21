@@ -1,378 +1,382 @@
-  macro_quotes: macro_quotes {
+macro_quotes: macro_quotes {
     compatible = "zmk,behavior-macro";
     label = "macro_quotes";
     #binding-cells = <0>;
     bindings = <&kp SQT>, <&kp SQT>, <&kp LEFT>;
-  };
-  macro_dquotes: macro_dquotes {
+};
+macro_dquotes: macro_dquotes {
     compatible = "zmk,behavior-macro";
     label = "macro_dquotes";
     #binding-cells = <0>;
     bindings = <&kp DQT>, <&kp DQT>, <&kp LEFT>;
-  };
-  macro_braces: macro_braces {
+};
+macro_braces: macro_braces {
     compatible = "zmk,behavior-macro";
     label = "macro_braces";
     #binding-cells = <0>;
     bindings = <&kp LBRC>, <&kp RBRC>, <&kp LEFT>;
-  };
-  macro_parens: macro_parens {
+};
+macro_parens: macro_parens {
     compatible = "zmk,behavior-macro";
     label = "macro_parens";
     #binding-cells = <0>;
     bindings = <&kp LPAR>, <&kp RPAR>, <&kp LEFT>;
-  };
-  macro_brackets: macro_brackets {
+};
+macro_brackets: macro_brackets {
     compatible = "zmk,behavior-macro";
     label = "macro_brackets";
     #binding-cells = <0>;
     bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-  };
-  macro_kinesis: macro_kinesis {
+};
+macro_kinesis: macro_kinesis {
     compatible = "zmk,behavior-macro";
     label = "macro_kinesis";
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
-  };
-  macro_go_view_1: macro_go_view_1 {
-      label = "macro_go_view_1";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+};
 
-          // Go view 1
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_2: macro_go_view_2 {
-      label = "macro_go_view_2";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 2
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_3: macro_go_view_3 {
-      label = "macro_go_view_3";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+/ { macros {
+    macro_go_view_1: macro_go_view_1 {
+        label = "macro_go_view_1";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 3
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_4: macro_go_view_4 {
-      label = "macro_go_view_4";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            // Go view 1
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_2: macro_go_view_2 {
+        label = "macro_go_view_2";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 4
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_5: macro_go_view_5 {
-      label = "macro_go_view_5";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            // Go view 2
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_3: macro_go_view_3 {
+        label = "macro_go_view_3";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 5
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_6: macro_go_view_6 {
-      label = "macro_go_view_6";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            // Go view 3
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_4: macro_go_view_4 {
+        label = "macro_go_view_4";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 6
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_7: macro_go_view_7 {
-      label = "macro_go_view_7";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            // Go view 4
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_5: macro_go_view_5 {
+        label = "macro_go_view_5";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 7
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_8: macro_go_view_8 {
-      label = "macro_go_view_8";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            // Go view 5
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_6: macro_go_view_6 {
+        label = "macro_go_view_6";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 8
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
-  macro_go_view_9: macro_go_view_9 {
-      label = "macro_go_view_9";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <
-          // Go to most left view
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp LEFT
-          &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            // Go view 6
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_7: macro_go_view_7 {
+        label = "macro_go_view_7";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
 
-          // Go view 9
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-          &macro_press &kp LCTRL &kp LGUI &kp RIGHT
-          &macro_release &kp RIGHT &kp LGUI &kp LCTRL
-      >;
-  };
+            // Go view 7
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_8: macro_go_view_8 {
+        label = "macro_go_view_8";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+
+            // Go view 8
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+    macro_go_view_9: macro_go_view_9 {
+        label = "macro_go_view_9";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <
+            // Go to most left view
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp LEFT
+            &macro_release &kp LEFT &kp LGUI &kp LCTRL
+
+            // Go view 9
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+            &macro_press &kp LCTRL &kp LGUI &kp RIGHT
+            &macro_release &kp RIGHT &kp LGUI &kp LCTRL
+        >;
+    };
+}; };
