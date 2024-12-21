@@ -40,8 +40,8 @@ macro_go_view_1: macro_go_view_1 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_2: macro_go_view_2 {
     label = "macro_go_view_2";
@@ -49,8 +49,8 @@ macro_go_view_2: macro_go_view_2 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_3: macro_go_view_3 {
     label = "macro_go_view_3";
@@ -58,8 +58,8 @@ macro_go_view_3: macro_go_view_3 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_4: macro_go_view_4 {
     label = "macro_go_view_4";
@@ -67,8 +67,8 @@ macro_go_view_4: macro_go_view_4 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_5: macro_go_view_5 {
     label = "macro_go_view_5";
@@ -76,8 +76,8 @@ macro_go_view_5: macro_go_view_5 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_6: macro_go_view_6 {
     label = "macro_go_view_6";
@@ -85,8 +85,8 @@ macro_go_view_6: macro_go_view_6 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_7: macro_go_view_7 {
     label = "macro_go_view_7";
@@ -94,8 +94,8 @@ macro_go_view_7: macro_go_view_7 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_8: macro_go_view_8 {
     label = "macro_go_view_8";
@@ -103,8 +103,8 @@ macro_go_view_8: macro_go_view_8 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
 macro_go_view_9: macro_go_view_9 {
     label = "macro_go_view_9";
@@ -112,6 +112,6 @@ macro_go_view_9: macro_go_view_9 {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
-    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
-    , <&macro_release>;
+    , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
+    , <&macro_release &kp LCTRL &kp LGUI>;
 };
