@@ -41,14 +41,9 @@
 
         // Macros - view
         &macro_go_view_1 &kp LALT &kp STAR 
-        &macro_go_view_2 &kp LALT &kp LBKT 
-        &macro_go_view_3 &kp LALT &kp LBRC 
-        &macro_go_view_4 &kp LALT &kp LPAR 
-        &macro_go_view_5 &kp LALT &kp HASH 
-        &macro_go_view_6 &kp LALT &kp CARET 
-        &macro_go_view_7 &kp LALT &kp RPAR 
-        &macro_go_view_8 &kp LALT &kp RBRC 
-        &macro_go_view_9 &kp LALT &kp RBKT 
+
+
+
 
       >;
     };
