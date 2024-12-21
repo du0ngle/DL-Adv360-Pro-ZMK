@@ -40,8 +40,8 @@
         &mo 3     &kp GRAVE &kp PERCENT &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp DOWN &kp UP  &kp AMPS &kp EXCL &mo 3
 
         // Macros - view
-        &macro_go_view_1 &kp LALT &kp STAR 
-        //&kp LALT &kp STAR & macro_go_view_1
+        //&macro_go_view_1 &kp LALT &kp STAR 
+        &kp LALT &kp STAR & macro_go_view_1
 
 
 
