@@ -38,6 +38,18 @@
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &mo 1     &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &mo 1
         &mo 3     &kp GRAVE &kp PERCENT &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp DOWN &kp UP  &kp AMPS &kp EXCL &mo 3
+
+        // Macros - view
+        &mod LALT &kp STAR &macro macro_go_view_1
+        &mod LALT &kp LBKT &macro macro_go_view_2
+        &mod LALT &kp LBRC &macro macro_go_view_3
+        &mod LALT &kp LPAR &macro macro_go_view_4
+        &mod LALT &kp HASH &macro macro_go_view_5
+        &mod LALT &kp CARET &macro macro_go_view_6
+        &mod LALT &kp RPAR &macro macro_go_view_7
+        &mod LALT &kp RBRC &macro macro_go_view_8
+        &mod LALT &kp RBKT &macro macro_go_view_9
+
       >;
     };
     shift_layer {
