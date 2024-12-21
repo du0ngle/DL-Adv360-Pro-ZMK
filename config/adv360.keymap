@@ -35,17 +35,13 @@
       bindings = <
         &kp EQUAL &kp STAR    &kp LBKT   &kp LBRC   &kp LPAR     &kp HASH &tog 2                                                           &mo 4 &kp CARET &kp RPAR &kp RBRC    &kp RBKT   &kp DLLR   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &mo 5 &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &mo 1     &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &mo 1
         &mo 3     &kp GRAVE &kp PERCENT &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp DOWN &kp UP  &kp AMPS &kp EXCL &mo 3
 
         // Macros - view
         //&macro_go_view_1 &kp LALT &kp STAR 
-        &kp LALT(STAR) & macro_go_view_1
-
-
-
-
+        //&kp LALT(STAR) & macro_go_view_1
       >;
     };
     shift_layer {
@@ -68,7 +64,7 @@
     };
     fn {
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 2                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 2                                           &mo 4 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
         &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
@@ -84,5 +80,21 @@
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
+
+
+
+    alt_layer {
+        bindings = <
+            &kp F1 &kp macro_go_view_1 &kp macro_go_view_2 &kp macro_go_view_3 &kp macro_go_view_4 &kp macro_go_view_5 &tog 2                                           &mo 4 &kp macro_go_view_6 &kp macro_go_view_7 &kp macro_go_view_8 &kp macro_go_view_9 &kp F11 &kp F12
+            &none &none &none &none &none &none  &none                                           &none &none &none &none &none  &none  &none
+            &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
+            &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
+            &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
+        >;
+    };
+
+
+
+
   };
 };
