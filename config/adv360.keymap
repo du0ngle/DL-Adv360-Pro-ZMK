@@ -41,7 +41,7 @@
 
         // Macros - view
         //&macro_go_view_1 &kp LALT &kp STAR 
-        &kp LALT &kp STAR &macro_exec macro_go_view_1
+        &kp LALT &kp STAR & macro_go_view_1
 
 
 
