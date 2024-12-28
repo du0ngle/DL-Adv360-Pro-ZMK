@@ -120,7 +120,7 @@ macro_open_terminal: macro_open_terminal {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings 
-    = <&macro_press &kp LGUI &kp X>
-    , <&macro_tap &kp I>
-    , <&macro_release &kp LGUI &kp X>;
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp X &kp I>
+    , <&macro_release &kp LGUI>;
 };
