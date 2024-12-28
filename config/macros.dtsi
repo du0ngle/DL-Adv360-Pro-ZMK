@@ -151,3 +151,39 @@ macro_file_explorer: macro_file_explorer {
     , <&macro_tap &kp E>
     , <&macro_release &kp LGUI>;
 };
+macro_max_screen: macro_max_screen {
+    label = "macro_max_screen";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp UP>
+    , <&macro_release &kp LGUI>;
+};
+macro_min_screen: macro_min_screen {
+    label = "macro_min_screen";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp DOWN>
+    , <&macro_release &kp LGUI>;
+};
+macro_right_screen: macro_right_screen {
+    label = "macro_right_screen";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp RIGHT>
+    , <&macro_release &kp LGUI>;
+};
+macro_left_screen: macro_left_screen {
+    label = "macro_left_screen";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp RIGHT>
+    , <&macro_release &kp LGUI>;
+};
