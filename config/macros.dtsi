@@ -115,3 +115,12 @@ macro_go_view_9: macro_go_view_9 {
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
     , <&macro_release &kp LCTRL &kp LGUI>;
 };
+macro_open_terminal: macro_open_terminal {
+    label = "macro_open_terminal";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+    = <&macro_press &kp LGUI &kp X>
+    , <&macro_tap &kp I>
+    , <&macro_release &kp LGUI &kp X>;
+};
