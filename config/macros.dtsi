@@ -148,6 +148,6 @@ macro_file_explorer: macro_file_explorer {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LGUI>
-    , <&macro_tap &kp e>
+    , <&macro_tap &kp E>
     , <&macro_release &kp LGUI>;
 };
