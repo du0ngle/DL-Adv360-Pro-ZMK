@@ -121,6 +121,7 @@ macro_open_terminal: macro_open_terminal {
     #binding-cells = <0>;
     bindings 
     = <&macro_press &kp LGUI>
-    , <&macro_tap &kp X &kp I>
+    , <&macro_tap &kp X>
     , <&macro_release &kp LGUI>;
+    , <&macro_tap &kp I>
 };
