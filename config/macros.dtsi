@@ -142,3 +142,12 @@ macro_alt_f4: macro_alt_f4 {
     , <&macro_tap &kp F4>
     , <&macro_release &kp LALT>;
 };
+macro_file_explorer: macro_file_explorer {
+    label = "macro_file_explorer";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp e>
+    , <&macro_release &kp LGUI>;
+};
