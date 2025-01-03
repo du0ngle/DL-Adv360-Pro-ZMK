@@ -38,6 +38,8 @@ macro_go_view_1: macro_go_view_1 {
     label = "macro_go_view_1";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
@@ -47,6 +49,8 @@ macro_go_view_2: macro_go_view_2 {
     label = "macro_go_view_2";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT>
@@ -56,6 +60,8 @@ macro_go_view_3: macro_go_view_3 {
     label = "macro_go_view_3";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT>
@@ -65,6 +71,8 @@ macro_go_view_4: macro_go_view_4 {
     label = "macro_go_view_4";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -74,6 +82,8 @@ macro_go_view_5: macro_go_view_5 {
     label = "macro_go_view_5";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -83,6 +93,8 @@ macro_go_view_6: macro_go_view_6 {
     label = "macro_go_view_6";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -92,6 +104,8 @@ macro_go_view_7: macro_go_view_7 {
     label = "macro_go_view_7";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -101,6 +115,8 @@ macro_go_view_8: macro_go_view_8 {
     label = "macro_go_view_8";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -110,6 +126,8 @@ macro_go_view_9: macro_go_view_9 {
     label = "macro_go_view_9";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -131,6 +149,8 @@ macro_alt_tab: macro_alt_tab {
     label = "macro_alt_tab";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LALT &kp TAB>
     , <&macro_release &kp LALT &kp TAB &mo 0>;
@@ -139,6 +159,8 @@ macro_alt_f4: macro_alt_f4 {
     label = "macro_alt_f4";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LALT>
     , <&macro_tap &kp F4>
@@ -148,6 +170,8 @@ macro_file_explorer: macro_file_explorer {
     label = "macro_file_explorer";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp E>
@@ -157,6 +181,8 @@ macro_max_screen: macro_max_screen {
     label = "macro_max_screen";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp UP>
@@ -166,6 +192,8 @@ macro_min_screen: macro_min_screen {
     label = "macro_min_screen";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp DOWN>
@@ -175,6 +203,8 @@ macro_right_screen: macro_right_screen {
     label = "macro_right_screen";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp RIGHT>
@@ -184,6 +214,8 @@ macro_left_screen: macro_left_screen {
     label = "macro_left_screen";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp LEFT>
@@ -193,6 +225,8 @@ macro_ctrl_alt_del: macro_ctrl_alt_del {
     label = "macro_ctrl_alt_del";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LCTRL &kp LALT>
     , <&macro_tap &kp DEL>
