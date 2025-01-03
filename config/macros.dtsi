@@ -294,9 +294,9 @@ macro_shift_ctrl_right: macro_shift_ctrl_right {
     wait-ms = <10>;
     tap-ms = <10>;
     bindings 
-    = <&macro_press &kp LCTRL &kp LS>
+    = <&macro_press &kp LCTRL &kp LSHIFT>
     , <&macro_tap &kp RIGHT>
-    , <&macro_release &kp LCTRL &kp LS>;
+    , <&macro_release &kp LCTRL &kp LSHIFT>;
 };
 macro_shift_ctrl_left: macro_shift_ctrl_left {
     label = "macro_shift_ctrl_left";
@@ -305,9 +305,9 @@ macro_shift_ctrl_left: macro_shift_ctrl_left {
     wait-ms = <10>;
     tap-ms = <10>;
     bindings 
-    = <&macro_press &kp LCTRL &kp LS>
+    = <&macro_press &kp LCTRL &kp LSHIFT>
     , <&macro_tap &kp LEFT>
-    , <&macro_release &kp LCTRL &kp LS>;
+    , <&macro_release &kp LCTRL &kp LSHIFT>;
 };
 macro_shift_down: macro_shift_down {
     label = "macro_shift_down";
@@ -316,9 +316,9 @@ macro_shift_down: macro_shift_down {
     wait-ms = <10>;
     tap-ms = <10>;
     bindings 
-    = <&macro_press &kp LS>
+    = <&macro_press &kp LSHIFT>
     , <&macro_tap &kp DOWN>
-    , <&macro_release &kp LS>;
+    , <&macro_release &kp LSHIFT>;
 };
 macro_shift_up: macro_shift_up {
     label = "macro_shift_up";
@@ -327,7 +327,7 @@ macro_shift_up: macro_shift_up {
     wait-ms = <10>;
     tap-ms = <10>;
     bindings 
-    = <&macro_press &kp LS>
+    = <&macro_press &kp LSHIFT>
     , <&macro_tap &kp UP>
-    , <&macro_release &kp LS>;
+    , <&macro_release &kp LSHIFT>;
 };
