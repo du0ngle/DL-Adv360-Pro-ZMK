@@ -119,11 +119,12 @@ macro_open_terminal: macro_open_terminal {
     label = "macro_open_terminal";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp X>
     , <&macro_release &kp LGUI>
-    , <&macro_wait-ms 100>
     , <&macro_tap &kp I>;
 };
 macro_alt_tab: macro_alt_tab {
@@ -187,4 +188,13 @@ macro_left_screen: macro_left_screen {
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp LEFT>
     , <&macro_release &kp LGUI>;
+};
+macro_ctrl_alt_del: macro_ctrl_alt_del {
+    label = "macro_ctrl_alt_del";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings 
+    = <&macro_press &kp LCTRL &kp LALT>
+    , <&macro_tap &kp DEL>
+    , <&macro_release &kp LCTRL &kp LALT>;
 };
