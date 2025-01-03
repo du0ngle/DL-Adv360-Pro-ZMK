@@ -91,7 +91,7 @@
         bindings = <
             &kp F1 &macro_go_view_1 &macro_go_view_2 &macro_go_view_3 &macro_go_view_4 &macro_go_view_5 &tog 2                                           &mo 4 &macro_go_view_6 &macro_go_view_7 &macro_go_view_8 &macro_go_view_9 &kp F11 &kp F12
             &macro_alt_tab &macro_alt_f4 &none &macro_file_explorer &none &macro_open_terminal &none                                           &none &none &none &none &none  &none  &none
-            &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &macro_left_screen &macro_min_screen &macro_max_screen &macro_right_screen  &trans  &trans
+            &trans &macro_ctrl_z &macro_ctrl_x &macro_ctrl_c &macro_ctrl_v &trans  &none        &trans &macro_ctrl_alt_del &trans &trans        &none &macro_left_screen &macro_min_screen &macro_max_screen &macro_right_screen  &trans  &trans
             &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
             &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
         >;

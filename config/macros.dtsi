@@ -232,3 +232,47 @@ macro_ctrl_alt_del: macro_ctrl_alt_del {
     , <&macro_tap &kp DEL>
     , <&macro_release &kp LCTRL &kp LALT>;
 };
+macro_ctrl_c: macro_ctrl_c {
+    label = "macro_ctrl_c";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LCTRL>
+    , <&macro_tap &kp C>
+    , <&macro_release &kp LCTRL>;
+};
+macro_ctrl_v: macro_ctrl_v {
+    label = "macro_ctrl_v";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LCTRL>
+    , <&macro_tap &kp V>
+    , <&macro_release &kp LCTRL>;
+};
+macro_ctrl_x: macro_ctrl_x {
+    label = "macro_ctrl_x";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LCTRL>
+    , <&macro_tap &kp X>
+    , <&macro_release &kp LCTRL>;
+};
+macro_ctrl_z: macro_ctrl_z {
+    label = "macro_ctrl_z";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LCTRL>
+    , <&macro_tap &kp Z>
+    , <&macro_release &kp LCTRL>;
+};
