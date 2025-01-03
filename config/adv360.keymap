@@ -49,7 +49,7 @@
         &kp TAB   &kp LS(Q)     &kp LS(W)    &kp LS(E)    &kp LS(R)      &kp LS(T)  &none                                                            &none &kp LS(Y)  &kp LS(U)  &kp LS(I)     &kp LS(O)    &kp LS(P)    &kp PIPE
         &kp ESC   &kp LS(A)     &kp LS(S)    &kp LS(D)    &kp LS(F)      &kp LS(G)  &none           &kp LCTRL &kp DEL &kp LGUI  &kp RCTRL           &none &kp LS(H)  &kp LS(J)  &kp LS(K)     &kp LS(L)    &kp COLON &kp DQT
         &mo 1     &kp LS(Z)     &kp LS(X)    &kp LS(C)    &kp LS(V)      &kp LS(B)                            &kp HOME &kp PG_UP                           &kp LS(N)  &kp LS(M)  &kp LT &kp GT  &kp QMARK &mo 1
-        &mo 3     &kp TILDE &kp AT &kp LEFT &kp RIGHT                &kp BSPC &mo 5   &kp END  &kp PG_DN &kp LS(ENTER) &kp SPACE              &kp DOWN &kp UP  &kp PERCENT &kp AT &mo 3
+        &mo 3     &kp TILDE &kp AT &kp LS(LEFT) &kp LS(RIGHT)                &kp BSPC &mo 5   &kp END  &kp PG_DN &kp LS(ENTER) &kp SPACE              &kp DOWN &kp UP  &kp PERCENT &kp AT &mo 3
       >;
     };
 
@@ -93,7 +93,7 @@
             &macro_alt_tab &macro_alt_f4 &none &macro_file_explorer &none &macro_open_terminal &none                                           &none &none &none &none &none  &none  &none
             &trans &macro_ctrl_z &macro_ctrl_x &macro_ctrl_c &macro_ctrl_v &trans  &none        &trans &macro_ctrl_alt_del &trans &trans        &none &macro_left_screen &macro_min_screen &macro_max_screen &macro_right_screen  &trans  &trans
             &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-            &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+            &trans &trans &trans &trans &trans               &macro_ctrl_backspace &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
         >;
     };
 
