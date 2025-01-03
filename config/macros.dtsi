@@ -276,6 +276,17 @@ macro_ctrl_z: macro_ctrl_z {
     , <&macro_tap &kp Z>
     , <&macro_release &kp LCTRL>;
 };
+macro_ctrl_f: macro_ctrl_f {
+    label = "macro_ctrl_f";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LCTRL>
+    , <&macro_tap &kp F>
+    , <&macro_release &kp LCTRL>;
+};
 macro_ctrl_backspace: macro_ctrl_backspace {
     label = "macro_ctrl_backspace";
     compatible = "zmk,behavior-macro";
