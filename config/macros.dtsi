@@ -137,8 +137,8 @@ macro_open_terminal: macro_open_terminal {
     label = "macro_open_terminal";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <10>;
-    tap-ms = <10>;
+    wait-ms = <100>;
+    tap-ms = <100>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp X>
