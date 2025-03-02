@@ -38,8 +38,8 @@ macro_go_view_1: macro_go_view_1 {
     label = "macro_go_view_1";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <30>;
+    tap-ms = <30>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
@@ -49,8 +49,8 @@ macro_go_view_2: macro_go_view_2 {
     label = "macro_go_view_2";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <30>;
+    tap-ms = <30>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT>
@@ -60,8 +60,8 @@ macro_go_view_3: macro_go_view_3 {
     label = "macro_go_view_3";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <30>;
+    tap-ms = <30>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT>
@@ -71,8 +71,8 @@ macro_go_view_4: macro_go_view_4 {
     label = "macro_go_view_4";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <30>;
+    tap-ms = <30>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -82,8 +82,8 @@ macro_go_view_5: macro_go_view_5 {
     label = "macro_go_view_5";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <20>;
-    tap-ms = <20>;
+    wait-ms = <30>;
+    tap-ms = <30>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
@@ -137,8 +137,8 @@ macro_open_terminal: macro_open_terminal {
     label = "macro_open_terminal";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <100>;
-    tap-ms = <100>;
+    wait-ms = <150>;
+    tap-ms = <150>;
     bindings 
     = <&macro_press &kp LGUI>
     , <&macro_tap &kp X>
