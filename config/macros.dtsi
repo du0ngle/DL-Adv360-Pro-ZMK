@@ -38,8 +38,8 @@ macro_go_view_1: macro_go_view_1 {
     label = "macro_go_view_1";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
@@ -49,8 +49,8 @@ macro_go_view_2: macro_go_view_2 {
     label = "macro_go_view_2";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT>
@@ -60,8 +60,8 @@ macro_go_view_3: macro_go_view_3 {
     label = "macro_go_view_3";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
+    wait-ms = <5>;
+    tap-ms = <5>;
     bindings 
     = <&macro_press &kp LCTRL &kp LGUI>
     , <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp RIGHT &kp RIGHT>
