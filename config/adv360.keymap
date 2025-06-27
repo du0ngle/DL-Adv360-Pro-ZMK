@@ -11,6 +11,8 @@
       #include "macros.dtsi"
       #include "version.dtsi"
 
+      // TEST TEST
+
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
