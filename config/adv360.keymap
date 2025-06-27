@@ -11,8 +11,6 @@
       #include "macros.dtsi"
       #include "version.dtsi"
 
-      // TEST TEST
-
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
@@ -208,13 +206,13 @@
 
 
 
-    // 0
+    // 0 - Windows compatible
     default_layer {
                 display-name = "Base";
                 bindings = <
 
                     &m0     &m1     &m2     &m3     &m4     &m5     &tog 1                                                  &mo 3     &m6     &m7     &m8     &m9     &m10    &m11
-                    &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                                  &none     &kp Y   &kp U   &kp I   &kp O   &kp P   &m17
+                    &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                                  &tog 5     &kp Y   &kp U   &kp I   &kp O   &kp P   &m17
                     &kp ESC  &kp A   &kp S   &kp D   &kp F   &kp G   &kp RALT        &kp LCTRL &kp DEL  &kp LGUI &kp RCTRL       &none    &kp H   &kp J   &kp K   &kp L   &m13    &m12
                     &kp LSHFT    &kp Z   &kp X   &kp C   &kp V   &kp B                          &kp HOME  &kp PG_UP                    &kp N   &kp M   &m14    &m15    &m16   &kp RSHFT 
                     &mo 2    &m18    &m19    &kp LEFT &kp RIGHT          &kp BSPC &mo 4    &kp END  &kp PG_DN &kp ENTER  &kp SPACE          &kp DOWN &kp UP  &m20    &m21    &mo 2
@@ -272,6 +270,35 @@
                 &trans &trans &trans &macro_shift_ctrl_left &macro_shift_ctrl_right               &macro_ctrl_backspace &trans &trans &trans &trans &trans              &macro_shift_down &macro_shift_up &trans  &trans  &trans
             >;
         };
+
+    // 5
+    linux_layer {
+                display-name = "Base";
+                bindings = <
+
+                    &m0     &m1     &m2     &m3     &m4     &m5     &tog 1                                                  &mo 3     &m6     &m7     &m8     &m9     &m10    &m11
+                    &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                                  &tog 0     &kp Y   &kp U   &kp I   &kp O   &kp P   &m17
+                    &kp ESC  &kp A   &kp S   &kp D   &kp F   &kp G   &kp RALT        &kp LCTRL &kp DEL  &kp LGUI &kp RCTRL       &none    &kp H   &kp J   &kp K   &kp L   &m13    &m12
+                    &kp LSHFT    &kp Z   &kp X   &kp C   &kp V   &kp B                          &kp HOME  &kp PG_UP                    &kp N   &kp M   &m14    &m15    &m16   &kp RSHFT 
+                    &mo 2    &m18    &m19    &kp LEFT &kp RIGHT          &kp BSPC &kp LGUI &kp END  &kp PG_DN &kp ENTER  &kp SPACE          &kp DOWN &kp UP  &m20    &m21    &mo 2
+
+
+                >;
+            };
+
+    // 6
+    game_layer {
+        display-name = "game_layer";
+        bindings = <
+            &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none  &none                                           &mo 3 &none &none &none &none  &none  &none
+            &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &none  &none                                           &tog 0 &none &none &none &none  &none  &none
+            &none &none &none &none &none &none  &none        &none &none &kp LGUI &none        &none &none &none &none &none  &none  &none
+            &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
+            &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
+        >;
+    };
+
+
 
 
     extra1 { 
