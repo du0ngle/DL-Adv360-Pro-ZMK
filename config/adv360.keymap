@@ -213,7 +213,7 @@
 
                     &m0     &m1     &m2     &m3     &m4     &m5     &tog 1                                                  &mo 3     &m6     &m7     &m8     &m9     &m10    &m11
                     &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                                  &tog 5     &kp Y   &kp U   &kp I   &kp O   &kp P   &m17
-                    &kp ESC  &kp A   &kp S   &kp D   &kp F   &kp G   &kp RALT        &kp LCTRL &kp DEL  &kp LGUI &kp RCTRL       &tog 6    &kp H   &kp J   &kp K   &kp L   &m13    &m12
+                    &kp ESC  &kp A   &kp S   &kp D   &kp F   &kp G   &kp RALT        &kp LCTRL &kp DEL  &kp LGUI &kp RCTRL       &tog 7    &kp H   &kp J   &kp K   &kp L   &m13    &m12
                     &kp LSHFT    &kp Z   &kp X   &kp C   &kp V   &kp B                          &kp HOME  &kp PG_UP                    &kp N   &kp M   &m14    &m15    &m16   &kp RSHFT 
                     &mo 2    &m18    &m19    &kp LEFT &kp RIGHT          &kp BSPC &mo 4    &kp END  &kp PG_DN &kp ENTER  &kp SPACE          &kp DOWN &kp UP  &m20    &m21    &mo 2
 
@@ -273,20 +273,33 @@
 
     // 5
     linux_layer {
-                display-name = "Base";
+                display-name = "Linux base";
                 bindings = <
 
                     &m0     &m1     &m2     &m3     &m4     &m5     &tog 1                                                  &mo 3     &m6     &m7     &m8     &m9     &m10    &m11
                     &kp TAB  &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                                  &trans     &kp Y   &kp U   &kp I   &kp O   &kp P   &m17
-                    &kp ESC  &kp A   &kp S   &kp D   &kp F   &kp G   &kp RALT        &kp LCTRL &kp DEL  &kp LGUI &kp RCTRL       &tog 6    &kp H   &kp J   &kp K   &kp L   &m13    &m12
+                    &kp ESC  &kp A   &kp S   &kp D   &kp F   &kp G   &kp RALT        &kp LCTRL &kp DEL  &kp LGUI &kp RCTRL       &tog 7    &kp H   &kp J   &kp K   &kp L   &m13    &m12
                     &kp LSHFT    &kp Z   &kp X   &kp C   &kp V   &kp B                          &kp HOME  &kp PG_UP                    &kp N   &kp M   &m14    &m15    &m16   &kp RSHFT 
-                    &mo 2    &m18    &m19    &kp LEFT &kp RIGHT          &kp BSPC &kp LGUI &kp END  &kp PG_DN &kp ENTER  &kp SPACE          &kp DOWN &kp UP  &m20    &m21    &mo 2
+                    &mo 2    &m18    &m19    &kp LEFT &kp RIGHT          &kp BSPC &mo 6 &kp END  &kp PG_DN &kp ENTER  &kp SPACE          &kp DOWN &kp UP  &m20    &m21    &mo 2
 
 
                 >;
             };
 
     // 6
+    linux_super_layer {
+        display-name = "Linux extended";
+        bindings = <
+            &none &linux_super_1 &linux_super_2 &linux_super_3 &linux_super_4 &none  &none                                           &none &none &none &none &none  &none  &none
+            &none &none &none &none &none &none  &none                                           &none &none &none &none &none  &none  &none
+            &none &macro_ctrl_a &none &none &macro_ctrl_f &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
+            &none &macro_ctrl_z &macro_ctrl_x &macro_ctrl_c &macro_ctrl_v &none                      &none &none                     &none &none &none &none  &none  &none
+            &none &none &none &none &none               &macro_ctrl_backspace &none &none &none &none &none              &none &none &none  &none  &none
+        >;
+    };
+
+
+    // 7
     game_layer {
         display-name = "game_layer";
         bindings = <

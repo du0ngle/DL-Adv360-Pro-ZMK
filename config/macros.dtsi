@@ -486,3 +486,53 @@ macro_shift_up: macro_shift_up {
     , <&macro_tap &kp UP>
     , <&macro_release &kp LSHIFT>;
 };
+
+linux_super_1: linux_super_1 {
+    label = "linux_super_1";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp N1>
+    , <&macro_release &kp LGUI>;
+};
+
+
+linux_super_2: linux_super_2 {
+    label = "linux_super_2";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp N2>
+    , <&macro_release &kp LGUI>;
+};
+
+linux_super_3: linux_super_3 {
+    label = "linux_super_3";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp N3>
+    , <&macro_release &kp LGUI>;
+};
+
+
+linux_super_4: linux_super_4 {
+    label = "linux_super_4";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings 
+    = <&macro_press &kp LGUI>
+    , <&macro_tap &kp N4>
+    , <&macro_release &kp LGUI>;
+};
