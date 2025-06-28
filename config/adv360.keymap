@@ -292,7 +292,7 @@
         bindings = <
             &none &linux_super_1 &linux_super_2 &linux_super_3 &linux_super_4 &none  &none                                           &none &none &none &none &none  &none  &linux_super_minus
             &none &linux_super_Q &none &linux_super_E &none &linux_super_T  &none                                           &none &none &none &none &none  &none  &none
-            &linux_super_tab &macro_ctrl_a &none &none &macro_ctrl_f &none  &none        &none &none &none &none        &none &linux_super_H &linux_super_J &linux_super_K &linux_super_L  &none  &none
+            &linux_super_TAB &macro_ctrl_a &none &none &macro_ctrl_f &none  &none        &none &none &none &none        &none &linux_super_H &linux_super_J &linux_super_K &linux_super_L  &none  &none
             &mo 7 &macro_ctrl_z &macro_ctrl_x &macro_ctrl_c &macro_ctrl_v &none                      &none &none                     &none &none &none &none  &none  &mo 7
             &none &none &none &none &none               &macro_ctrl_backspace &none &none &none &none &none              &none &none &none  &none  &none
         >;
