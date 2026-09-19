@@ -208,7 +208,7 @@
           bindings = <&kp G>, <&kp LC(HOME)>;
       };
 
-      vim_GG_dance: vim_GG_dance {
+      vim_gg_dance_shift: vim_gg_dance_shift {
           compatible = "zmk,behavior-tap-dance";
           label = "VIM_GG_DANCE_SHIFT";
           #binding-cells = <0>;
@@ -220,7 +220,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "VIM_G_OP";
           #binding-cells = <0>;
-          bindings = <&vim_gg_dance>, <&vim_GG_dance>;
+          bindings = <&vim_gg_dance>, <&vim_gg_dance_shift>;
           mods = <(MOD_LSFT|MOD_RSFT)>;
       };
 
