@@ -197,6 +197,33 @@
           mods = <(MOD_LSFT|MOD_RSFT)>;
       };
 
+      // G while D is held (see vim_nav_layer): double-tap g (unshifted) jumps to the top
+      // of the page/doc (Ctrl+Home, vim "gg"); double-tap G (shift held) jumps to the
+      // bottom (Ctrl+End, vim "G"). A single tap either way just falls through to g/G.
+      vim_gg_dance: vim_gg_dance {
+          compatible = "zmk,behavior-tap-dance";
+          label = "VIM_GG_DANCE";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp G>, <&kp LC(HOME)>;
+      };
+
+      vim_GG_dance: vim_GG_dance {
+          compatible = "zmk,behavior-tap-dance";
+          label = "VIM_GG_DANCE_SHIFT";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp LS(G)>, <&kp LC(END)>;
+      };
+
+      vim_g_op: vim_g_op {
+          compatible = "zmk,behavior-mod-morph";
+          label = "VIM_G_OP";
+          #binding-cells = <0>;
+          bindings = <&vim_gg_dance>, <&vim_GG_dance>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
     };
 
 
@@ -319,11 +346,11 @@
     vim_nav_layer {
         display-name = "VimNav";
         bindings = <
-            &trans &trans &trans &trans &trans &trans &trans                                                  &trans &trans &trans &trans &trans &kp END &trans
+            &trans &trans &trans &trans &trans &trans &trans                                                  &trans &kp HOME &trans &trans &trans &kp END &trans
             &trans &trans &kp LC(RIGHT) &trans &trans &trans &trans                                                  &trans &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans        &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-            &trans &trans &trans &trans &lt 9 V &trans                      &trans &trans                     &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &kp HOME &trans &trans
+            &trans &trans &trans &trans &trans &vim_g_op &trans        &trans &trans &trans &trans        &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+            &trans &trans &trans &trans &lt 9 V &kp LC(LEFT)                      &trans &trans                     &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans &trans &trans
         >;
     };
 
@@ -331,11 +358,11 @@
     vim_visual_layer {
         display-name = "VimVisual";
         bindings = <
-            &trans &trans &trans &trans &trans &trans &trans                                                  &trans &trans &trans &trans &trans &kp LS(END) &trans
+            &trans &trans &trans &trans &trans &trans &trans                                                  &trans &kp LS(HOME) &trans &trans &trans &kp LS(END) &trans
             &trans &trans &macro_shift_ctrl_right &trans &trans &trans &trans                                                  &trans &trans &trans &trans &trans &trans &trans
             &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans        &trans &kp LS(LEFT) &kp LS(DOWN) &kp LS(UP) &kp LS(RIGHT) &trans &trans
             &trans &trans &trans &trans &trans &macro_shift_ctrl_left                      &trans &trans                     &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &kp LS(HOME) &trans &trans
+            &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans &trans &trans
         >;
     };
 
